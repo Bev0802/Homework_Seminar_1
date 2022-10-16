@@ -15,7 +15,20 @@ Console.WriteLine("Введите второе целое число: ");
 
 int c = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Вы ввели {a}, {b}, {c}. Теперь сравним числа.");
+Console.WriteLine($"Вы ввели {a}, {b}, {c}. Cравним числа.");
 
 int max = 0;
 
+if (a > b && a > c)
+{
+    max = a;
+}
+if (b > a && b > c)
+{
+    max = b;
+}
+if (c > a && c > b)
+{
+    max = c;
+}
+Console.Write($"Самое большое число {max}");

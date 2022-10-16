@@ -3,3 +3,13 @@
 4 -> да
 -3 -> нет
 7 -> нет */
+Console.WriteLine("Введите целое число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Вы ввели чило {num}. Проверим, является ли оно четным.");
+
+if ((num % 2) == 0)
+{
+    Console.Write($"Да, чиcло {num} является четным.");
+}
+
+else Console.Write($"Нет, число {num} не является четным.");

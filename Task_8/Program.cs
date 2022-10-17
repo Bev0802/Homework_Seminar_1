@@ -5,14 +5,20 @@
 Console.WriteLine("Введите целое число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
+//проверим на положительное число
 if (N < 1)
-    Console.WriteLine("Недопустимое число!");
-else
 {
-    int count = N;
-    while (count <= N)
-    {
-        Console.Write($"{count} ");
-        count = count + 2;
-    }
+    Console.WriteLine("Недопустимое число!");
 }
+
+int count = N;
+if (count <= 1 && count <= N)
+{
+    if (count % 2 == 0)
+        Console.Write($"{count} ");
+    count++;
+}
+
+
+
+

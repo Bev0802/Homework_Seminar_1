@@ -20,6 +20,6 @@ Console.WriteLine($"Вы ввели {a}, {b}, {c}. Cравним числа.");
 int max = a;
 
 if (max < b) max = b;
-if (max < c) max = b;
+if (max < c) max = c;
 
 Console.Write($"Самое большое число {max}");
